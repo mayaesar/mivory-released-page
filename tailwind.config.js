@@ -1,9 +1,7 @@
+// postcss.config.js
 module.exports = {
     theme: {
         screens: {
-            'mobile': '375px',
-            // => @media (min-width: 375px) { ... }
-
             'tablet': '640px',
             // => @media (min-width: 640px) { ... }
 

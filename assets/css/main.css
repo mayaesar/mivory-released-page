@@ -3,6 +3,6 @@
 @import "tailwindcss" theme(static);
 @import "@nuxt/ui";
 
-.font-title {
+.font-header {
     font-family: 'Rubik', sans-serif;
 }
