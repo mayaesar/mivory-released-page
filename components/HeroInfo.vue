@@ -4,7 +4,7 @@
 
 <template>
   <div class="flex flex-col gap-4">
-    <h1 class="text-4xl font-bold">People forget, <br/> Mivory doesn't</h1>
+    <h1 class="text-5xl font-bold">People forget, <br/> Mivory doesn't</h1>
     <h3 class="text-xl">Save, Organize, Collaborate</h3>
     <div class="flex flex-row items-center gap-4 mt-4">
       <UButton color="neutral" size="lg" icon="ph:app-store-logo">
