@@ -17,18 +17,18 @@
     <div class="flex flex-row items-center gap-4 mt-4">
       <div>
         <UAvatarGroup>
-          <UAvatar src="https://github.com/benjamincanac.png" alt="Benjamin Canac" />
-          <UAvatar src="https://github.com/romhml.png" alt="Romain Hamel" />
-          <UAvatar src="https://github.com/noook.png" alt="Neil Richter" />
+          <UAvatar src="https://github.com/benjamincanac.png" alt="Benjamin Canac" size="xl" />
+          <UAvatar src="https://github.com/romhml.png" alt="Romain Hamel" size="xl" />
+          <UAvatar src="https://github.com/noook.png" alt="Neil Richter" size="xl" />
         </UAvatarGroup>
       </div>
       <div class="flex flex-col gap-1">
-        <div class="flex flex-row items-center gap-0.5">
-          <UIcon name="ph:star-fill" class="text-yellow-500" size="24" />
-          <UIcon name="ph:star-fill" class="text-yellow-500" size="24" />
-          <UIcon name="ph:star-fill" class="text-yellow-500" size="24" />
-          <UIcon name="ph:star-fill" class="text-yellow-500" size="24" />
-          <UIcon name="ph:star-fill" class="text-yellow-500" size="24" />
+        <div class="flex flex-row items-center">
+          <UIcon name="ph:star-fill" class="text-yellow-500" size="20" />
+          <UIcon name="ph:star-fill" class="text-yellow-500" size="20" />
+          <UIcon name="ph:star-fill" class="text-yellow-500" size="20" />
+          <UIcon name="ph:star-fill" class="text-yellow-500" size="20" />
+          <UIcon name="ph:star-fill" class="text-yellow-500" size="20" />
         </div>
         253 Users saving in Mivory
       </div>
