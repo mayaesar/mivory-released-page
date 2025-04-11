@@ -3,6 +3,7 @@
   const { t } = useI18n({
     messages: {
       en: {
+        home: "Home",
         title: "Privacy Policy",
         introduction: "Welcome to Mivory. Protecting your privacy is our top priority. This Privacy Policy outlines how we collect, use, and protect your information in compliance with:",
         compliance: {
@@ -81,6 +82,7 @@
         last_updated: "Last updated: April 2025"
       },
       fr: {
+        home: "Accueil",
         title: "Politique de confidentialité",
         introduction: "Bienvenue sur Mivory. La protection de votre vie privée est notre priorité absolue. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos informations conformément à :",
         compliance: {
@@ -165,8 +167,10 @@
 
 <template>
   <NuxtLayout>
-  <section class="max-w-screen-lg mx-auto mb-12">
-    <UButton href="/" variant="link" color="neutral" size="xl" icon="lucide:arrow-left" class="py-6"/>
+  <section class="max-w-screen-lg text-gray-900 tracking-tight mx-auto mb-12">
+    <UButton href="/" variant="link" color="neutral" size="xl" icon="lucide:arrow-left" class="py-6">
+      <span>{{ t("home") }}</span>
+    </UButton>
     <div class="flex-1 flex flex-col max-w-screen-lg w-full mx-auto py-8">
       <h1 class="text-center text-5xl font-bold mb-10">{{ t("title")}}</h1>
       <p class="text-gray-700 mb-6">

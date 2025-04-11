@@ -3,6 +3,7 @@
 const { t } = useI18n({
   messages: {
     en: {
+      home: "Home",
       title: "Terms and Conditions",
       introduction: "By using Mivory, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not accept these Terms, you must discontinue use immediately.",
       link: "Privacy Policy",
@@ -72,6 +73,7 @@ const { t } = useI18n({
       last_updated: "Last updated: April 2025"
     },
     fr: {
+      home: "Accueil",
       title: "Conditions d'utilisation",
       introduction: "En utilisant Mivory, vous reconnaissez avoir lu, compris et accepté d'être lié par ces conditions. Si vous n'acceptez pas ces conditions, vous devez cesser immédiatement l'utilisation.",
       link: "Politique de confidentialité",
@@ -145,14 +147,16 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <NuxtLayout>
-  <section class="max-w-screen-lg mx-auto mb-12">
-    <UButton href="/" variant="link" color="neutral" size="xl" icon="lucide:arrow-left" class="py-6"/>
+  <section class="max-w-screen-lg text-gray-900 tracking-tight mx-auto mb-12">
+    <UButton href="/" variant="link" color="neutral" size="xl" icon="lucide:arrow-left" class="py-6">
+      <span>{{ t("home") }}</span>
+    </UButton>
     <div class="flex-1 flex flex-col max-w-screen-lg w-full mx-auto py-8">
       <h1 class="text-center text-5xl font-bold mb-10">{{ t("title") }}</h1>
 
       <p class="text-gray-700 mb-6">
-        {{ t("introduction")}}</p>
+        {{ t("introduction")}}
+      </p>
 
       <div class="space-y-8">
         <section>
@@ -259,5 +263,4 @@ const { t } = useI18n({
 
     <Footer />
   </section>
-  </NuxtLayout>
 </template>
