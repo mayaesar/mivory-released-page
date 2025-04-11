@@ -36,9 +36,9 @@ const features = [
 </script>
 
 <template>
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
   <div v-for="feature in features" :key="feature.title" class="flex flex-col gap-2 px-10 py-8 ring-1 ring-gray-200 rounded-2xl shadow-md hover:shadow-lg bg-white">
-    <UIcon :name="feature.icon" size="28" class="text-gray-900 mb-3" />
+    <UIcon :name="feature.icon" size="28" class="text-gray-500 mb-3" />
     <h3 class="text-xl font-bold">{{ feature.title }}</h3>
     <p class="text-gray-600">{{ feature.description }}</p>
   </div>

@@ -47,7 +47,7 @@ const questions = [
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 p-12">
+  <div class="flex flex-col gap-4 p-3 md:p-12">
     <Collapse v-for="(question, index) in questions" :key="index" :title="question.question" :description="question.answer" />
   </div>
 </template>

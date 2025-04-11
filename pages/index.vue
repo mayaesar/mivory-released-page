@@ -4,22 +4,22 @@ import Footer from "~/components/Footer.vue";
 </script>
 
 <template>
-  <div class="font-gray-900 max-w-screen-lg mx-auto mb-12">
+  <div class="text-gray-900 tracking-tight max-w-screen-lg mx-auto mb-12">
     <TopNav />
-    <div class="space-y-48 p-6">
-      <div class="flex flex-row items-center justify-between pt-12">
+    <div class="space-y-48 p-2.5 md:p-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-12">
         <HeroInfo />
         <USkeleton class="aspect-[2/3] h-[70dvh]"/>
       </div>
       <div>
-        <div class="flex flex-col content-center items-center font-semibold text-4xl mb-12">
+        <div class="flex flex-col content-center items-center font-bold text-4xl mb-12">
           <h2>An Elephant Never Forgets</h2>
           <h2>Neither will You with these Features</h2>
         </div>
         <FeaturesDisplay />
       </div>
-      <div class="bg-gray-100 rounded-xl pt-12">
-        <h2 class="text-center font-semibold text-3xl">FAQ</h2>
+      <div id="faq" class="bg-gray-100 md:rounded-xl pt-12 -mx-2.5 md:mx-0">
+        <h2 class="text-center font-bold text-3xl">FAQ</h2>
         <FaqDisplay />
       </div>
     </div>

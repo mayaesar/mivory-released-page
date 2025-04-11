@@ -11,9 +11,9 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <div @click="isOpen = !isOpen" class="flex flex-col gap-2 bg-white px-6 py-4 rounded-xl cursor-pointer select-none">
+  <div @click="isOpen = !isOpen" class="flex flex-col gap-2 bg-white rounded-xl cursor-pointer select-none px-6 py-4">
     <div class="flex flex-row w-full">
-      <h3 class="text-lg font-semibold text-gray-900">
+      <h3 class="text-lg font-semibold text-gray-700">
         {{ title }}
       </h3>
       <UIcon
@@ -25,7 +25,7 @@ const isOpen = ref(false);
       />
     </div>
 
-    <p v-if="isOpen" class="text-gray-600">
+    <p v-if="isOpen" class="text-gray-500">
       {{ description }}
     </p>
   </div>
