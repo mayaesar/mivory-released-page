@@ -1,5 +1,16 @@
 <script setup lang="ts">
-
+const { t } = useI18n({
+  messages: {
+    en: {
+      terms_and_conditions: "Terms and Conditions",
+      privacy_policy: "Privacy Policy",
+    },
+    fr: {
+      terms_and_conditions: "Conditions d'utilisation",
+      privacy_policy: "Politique de confidentialité",
+    }
+  }
+})
 </script>
 
 <template>
@@ -10,8 +21,12 @@
       <h2 class="font-bold text-2xl">Mivory</h2>
     </NuxtLink>
     <div class="flex flex-row items-center gap-2">
-      <UButton variant="link" color="neutral" size="xl" class="text-gray-700 hover:text-gray-900 hover:underline" href="/terms-and-conditions">Terms and Condition</UButton>
-      <UButton variant="link" color="neutral" size="xl" class="text-gray-700 hover:text-gray-900 hover:underline" href="/privacy-policy">Privacy Policy</UButton>
+      <UButton variant="link" color="neutral" size="xl" class="text-gray-700 hover:text-gray-900 hover:underline" href="/terms-and-conditions">
+        {{ t('terms_and_conditions') }}
+      </UButton>
+      <UButton variant="link" color="neutral" size="xl" class="text-gray-700 hover:text-gray-900 hover:underline" href="/privacy-policy">
+        {{ t('privacy_policy') }}
+      </UButton>
     </div>
   </div>
 </template>

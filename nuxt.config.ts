@@ -17,5 +17,9 @@ export default defineNuxtConfig({
       code: 'fr',
       name: 'Français'
     }]
-  }
+  },
+  site: {
+    url: 'https://mivory.app',
+    name: 'Mivory - Your Second Memory'
+  },
 })
