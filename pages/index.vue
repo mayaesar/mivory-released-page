@@ -12,7 +12,7 @@ import Footer from "~/components/Footer.vue";
         <USkeleton class="aspect-[2/3] h-[70dvh]"/>
       </div>
       <div>
-        <div class="flex flex-col content-center items-center font-semibold text-3xl mb-12">
+        <div class="flex flex-col content-center items-center font-semibold text-4xl mb-12">
           <h2>An Elephant Never Forgets</h2>
           <h2>Neither will You with these Features</h2>
         </div>
